@@ -1,5 +1,13 @@
+'use client'
+
+import { usePathname } from "next/navigation";
 
 export default function DashboardPage() {
+
+  const pathName = usePathname();     // LẤY THÔNG TIN - TRÊN - URL
+  console.log('usePathname - lay thong tin URL: ' + pathName);
+
+  // RENDER
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
 
