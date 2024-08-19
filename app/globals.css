@@ -48,3 +48,7 @@ footer {
   color: #777;
   border-top: 1px solid black;
 }
+
+.not-found {
+  text-align: center;
+}
