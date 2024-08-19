@@ -1,13 +1,19 @@
 import Image from "next/image";
+import styles from "./home.module.css"
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <div className={styles.container}>
 
-      <div>HOME-PAGE</div>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis ex libero excepturi nam qui eveniet totam molestiae numquam pariatur iste commodi vitae, delectus, sapiente rem eaque reprehenderit, a optio animi!</p>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis ex libero excepturi nam qui eveniet totam molestiae numquam pariatur iste commodi vitae, delectus, sapiente rem eaque reprehenderit, a optio animi!</p>
+      <div className={styles.title}>HOME-PAGE</div>
+      <p className={styles.text}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis ex libero excepturi nam qui eveniet totam molestiae numquam pariatur iste commodi vitae, delectus, sapiente rem eaque reprehenderit, a optio animi!</p>
+      <p className={styles.text}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis ex libero excepturi nam qui eveniet totam molestiae numquam pariatur iste commodi vitae, delectus, sapiente rem eaque reprehenderit, a optio animi!</p>
 
-    </main>
+      <Link href='/dashboard'>
+        <div className={styles.btn}>chuyen den trang DASHBOARD</div>
+      </Link>
+
+    </div>
   );
 }

@@ -1,0 +1,33 @@
+/* TUANTRAN - CSS - LOCAL */
+
+.tuanTranCssLocal {
+  color: blue;
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1080px;
+  margin: auto;
+}
+
+.title {
+  color: rgb(255, 0, 0);
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.text {
+  color: blueviolet;
+}
+
+.btn {
+  display: block;
+  max-width: auto;
+  text-align: center;
+  width: 300px;
+  padding: 8px 0px;
+  background: blue;
+  border-width: 4px;
+  color: rgb(253, 248, 248);
+  text-align: center;
+}

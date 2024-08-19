@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+
+// import CSS
 import "./globals.css";
 import Navbar from "@/component/Navbar";
+import Footer from "@/component/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,8 +21,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <p className="tuanTranCssGlobal" >TUANTRAN - NEXT JS</p>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
