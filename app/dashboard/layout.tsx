@@ -1,3 +1,10 @@
+import { Metadata } from "next";
+
+
+export const metadata: Metadata = {
+  title: "TuanTran | DASHBOARD",
+  description: "Đây là trang DASHBOARD tuantran",
+};
 
 export default function RootLayout({
     children,

@@ -1,5 +1,6 @@
 'use client'
 
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
@@ -11,6 +12,7 @@ const Navbar = () => {
         <nav>
             <h1>MENU - Navbar</h1>
             <hr/>
+            <Image src='/rong.png' alt='con rong' width={128} height={70} />
             <div className="flex justify-between ">
                 <div></div>
                 {/* 1. sử dụng thẻ LINK chuyển trang */}
